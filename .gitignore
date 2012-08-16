@@ -1,0 +1,4 @@
+baza
+static/upload
+*.pyc
+.*.swp
