@@ -1,4 +1,5 @@
 baza
 static/upload
 *.pyc
+*.py~
 .*.swp

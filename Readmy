@@ -1,3 +1,7 @@
 Many upload image in django1.4 with jquery-1.7.2.js, save in sqlite3 as database.
 
 On the inspiration of my jquery http://tutorialzine.com/2011/09/html5-file-upload-jquery-php/ translated from php open source project in Django
+
+
+
+To start the Django server in use. / Manage.py runserver on host localhost
