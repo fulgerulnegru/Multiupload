@@ -3,17 +3,15 @@ $(function(){
 	var dropbox = $('#dropbox'),
 		message = $('.message', dropbox);
 	
-	dropbox.filedrop({
-		// The name of the $_FILES entry:
+    dropbox.filedrop({
 		paramname:'pic',
 		
-		maxfiles: 5,
+		maxfiles: 1,
     	maxfilesize: 2,
 		url: 'upload_file',
 		
 		uploadFinished:function(i,file,response){
 			$.data(file).addClass('done');
-			// response is the JSON object that post_file.php returns
 		},
 		
     	error: function(err, file) {
@@ -22,10 +20,10 @@ $(function(){
 					showMessage('Your browser does not support HTML5 file uploads!');
 					break;
 				case 'TooManyFiles':
-					alert('Too many files! Please select 5 at most! (configurable)');
+					alert('Too many files! Please select' + maxfile + ' at most! (configurable)');
 					break;
 				case 'FileTooLarge':
-					alert(file.name+' is too large! Please upload files up to 2mb (configurable).');
+					alert(file.name+' is too large! Please upload files up to ' + maxfilesize +' (configurable).');
 					break;
 				default:
 					break;
@@ -71,8 +69,8 @@ $(function(){
 			
 		var reader = new FileReader();
 		
-		image.width = 100;
-		image.height = 100;
+		image.width = 200;
+		image.height = 200;
 		
 		reader.onload = function(e){
 			
