@@ -20,10 +20,10 @@ $(function(){
 					showMessage('Your browser does not support HTML5 file uploads!');
 					break;
 				case 'TooManyFiles':
-					alert('Too many files! Please select' + maxfile + ' at most! (configurable)');
+					alert('Too many files! Please select ' + 1 + ' at most! (configurable)');
 					break;
 				case 'FileTooLarge':
-					alert(file.name+' is too large! Please upload files up to ' + maxfilesize +' (configurable).');
+					alert(file.name+' is too large! Please upload files up to ' + 2 +'mb (configurable).');
 					break;
 				default:
 					break;
