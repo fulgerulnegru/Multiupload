@@ -6,7 +6,7 @@ $(function(){
     dropbox.filedrop({
 		paramname:'pic',
 		
-		maxfiles: 5,
+		maxfiles: 100,
     	maxfilesize: 2,
 		url: 'upload_file',
 		
